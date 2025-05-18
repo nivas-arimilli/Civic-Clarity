@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario-style Platformer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-ui">
+            <div class="score">Score: <span id="scoreDisplay">0</span></div>
+            <div class="controls">
+                <p>Controls: Arrow Keys to move, Space to jump</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/sound.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/player.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/platform.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/enemy.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/coin.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+    <div>
+    < a href =file:///C:/xampp/htdocs/Testing/rtx1.html>
+</div>
+</body>
+</html>

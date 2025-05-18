@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    
+    <style>
+        body {
+            background-color:  #e4b68b;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4d1e07;
+            font-size: 32px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .back-btn {
+            background: linear-gradient(135deg, #2a4d69, #1c3a52);
+            color: white;
+            padding: 8px 24px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-left: 40px;
+           
+        }
+
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            perspective: 1000px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            text-align: center;
+            margin: auto;
+        }
+
+        .card img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            background-color: transparent;
+            z-index: 2;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 3;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(109, 69, 10, 0.8);
+        }
+
+        .card:hover .card-title {
+            display: none;
+        }
+
+        .card__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(77, 30, 7, 0.9);
+            transform: rotateX(-90deg);
+            transform-origin: bottom;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 4;
+        }
+
+        .card:hover .card__content {
+            transform: rotateX(0deg);
+        }
+
+        .card__title {
+            margin: 0;
+            font-size: 24px;
+            color: #f7f6f6;
+            font-weight: 700;
+        }
+
+        .card__description {
+            margin: 15px 0 0;
+            font-size: 16px;
+            color: #f5efef;
+            line-height: 1.4;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #e4b68b;
+            color: #4d1e07;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #d9a06c;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .card-container {
+                grid-template-columns: repeat(1, 1fr); /* 1 column */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Constitutional Categories</h1>
+    <div class="navigation">
+        <a href="index.html" class="back-btn" style="padding: 30px; font-size: 1.5rem;">Home</a>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="cat1.webp" alt="Basic Structure and Principles">
+            <div class="card-overlay"></div>
+            <div class="card-title"></div>
+            <div class="card__content">
+                <p class="card__title">Basic Structure and Principles</p>
+                <p class="card__description">Part I II III IV</p>
+                <a href="parts.html" class="btn">Explore</a>
+               
+            </div>
+     
+        </div>
+        <div class="card">
+            <img src="cat2.webp" alt="Government Structure">
+            <div class="card-overlay"></div>
+            <div class="card-title"></div>
+            <div class="card__content">
+                <p class="card__title">Government Structure</p>
+                <p class="card__description">Part V VI VIII IX </p>
+                <a href="parts1.html" class="btn">Explore</a>
+                
+            </div>
+        </div>
+        <div class="card">
+            <img src="cat3.webp" alt="Centre-State Relations">
+            <div class="card-overlay"></div>
+            <div class="card-title"></div>
+            <div class="card__content">
+                <p class="card__title">Centre-State Relations</p>
+                <p class="card__description">Part X XI XII XIII</p>
+                <a href="parts2.html" class="btn">Explore</a>
+                
+            </div>
+        </div>
+        <div class="card">
+            <img src="cat4.webp" alt="Public Services, Elections & Judiciary">
+            <div class="card-overlay"></div>
+            <div class="card-title"></div>
+            <div class="card__content">
+                <p class="card__title">Public Services, Elections & Judiciary</p>
+                <p class="card__description">Part XIV XIV-A XV XVI</p>
+                <a href="parts3.html" class="btn">Explore</a>
+                            </div>
+        </div>
+        <div class="card">
+            <img src="cat5.webp" alt="Judiciary and Language Provisions">
+            <div class="card-overlay"></div>
+            <div class="card-title"></div>
+            <div class="card__content">
+                <p class="card__title">Judiciary and Language Provisions</p>
+                <p class="card__description">Part XVII XVIII</p>
+                <a href="parts4.html" class="btn">Explore</a>
+                
+            </div>
+        </div>
+        <div class="card">
+            <img src="cat6.webp" alt="Amendments and Special Provisions">
+            <div class="card-overlay"></div>
+            <div class="card-title"></div>
+            <div class="card__content">
+                <p class="card__title">Amendments and Special Provisions</p>
+                <p class="card__description">Part XIX XX XXI XXII</p>
+                <a href="parts5.html" class="btn">Explore</a>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

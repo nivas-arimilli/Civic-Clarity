@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts</title>
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+        h1 {
+            margin-left: 10px;
+        }
+
+        /* Background Image */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("const.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        /* 2x2 Grid Layout with increased gap */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px; /* Increased gap between cards */
+            width: 90%;
+            max-width: 900px; /* Slightly increased max-width to accommodate larger gaps */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 100%;
+            height: 360px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Card Image */
+        .card-image {
+            width: 100%; 
+            height: 70%; 
+            padding: 8px;
+            display: flex;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Card Button */
+        .card-text {
+            width: 90%;
+            height: 40px;
+            background-color: #5a2a14;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .card-text:hover {
+            box-shadow: 0px 0px 10px white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+                gap: 40px; /* Slightly reduced gap for mobile but still larger than original */
+            }
+
+            .card {
+                width: 90%;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <center><h1 style="font-size: 3rem; text-shadow: 0px 0px 10px white;">PARTS X-XIII</h1></center>
+    <a href="index.html" class="back" style="background-color:rgb(7, 47, 73); padding:20px; border-radius:10px; margin-right:auto; color:white; text-decoration:none; display:inline-block; box-shadow:0px 0px 10px white;">Back to home</a><br/>
+    <a href="categories.html" class="back" style="background-color:brown; padding:20px; border-radius:10px; margin-right:auto; color:white; text-decoration:none; display:inline-block;">Back to Categories</a>
+    
+    <!-- Card Container -->
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="cat3-1.jpg" alt="The Union- Part V">
+            </div>
+            <a href="articles.php?part=10" class="card-text">Part X - The Scheduled and Tribal Areas</a>
+        </div>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="cat3-2.jpg" alt="Indian Constitution - Part IV">
+            </div>
+            <a href="articles.php?part=11" class="card-text">Part XI - Relations between the Union and the States</a>
+        </div>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="cat3-3.jpg" alt="">
+            </div>
+            <a href="articles.php?part=12" class="card-text">Part XII - Finance, Property, Contracts and Suits</a>
+        </div>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="cat3-4.jpg" alt="Indian Constitution - Part VI">
+            </div>
+            <a href="articles.php?part=13" class="card-text">Part XIII - Trade and Commerce</a>
+        </div>
+    </div>
+    
+</body>
+</html>

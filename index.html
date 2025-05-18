@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic-Clarity</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .member-card-img-wrapper {
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .member-card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #491404da;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Civic-Clarity</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="...">Login</a>
+                    </li>
+                </ul>
+                
+                <!-- Responsive Search Form -->
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                    <form class="d-flex mb-2 mb-lg-0">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <a class="nav-link active ms-lg-2" href="Boostrap login tutorial_2 - Starting Point/">
+                        <i class="fa-solid fa-lock"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="home-sec py-5" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 contleft" data-aos="zoom-in">
+                    <h1 class="mb-4">Dive into the Constitution's Articles here-clear, concise explanations await you!</h1>
+                    <p class="mb-4">
+                        To foster a deeper understanding of constitutional law by providing clear, concise, and comprehensive explanations.
+                        We believe that informed citizens are the cornerstone of a thriving democracy.
+                    </p>
+                    <p class="mb-4">
+                        Join us in unraveling the fascinating world of constitutions.
+                        Empower yourself with knowledge and be a part of our growing community of informed individuals.
+                    </p>
+                    <a href="categories.html" class="btn btn-custom">Get started</a>
+                </div>
+                <div class="col-lg-6 contright" data-aos="fade-right">
+                    <div class="text-center">
+                        <img src="emblem1.png" alt="National Emblem" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section class="comm-sec py-5" id="comm">
+        <div class="container">
+            <h1 class="text-center mb-5">Committee</h1>
+            <div class="row g-4">
+                <!-- Committee Cards - Responsive Grid -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem1.jpg" class="card-img-top" alt="Committee Member 1">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">RAJENDRA PRASAD</h5>
+                            <p class="card-text">Ad Hoc Committee on the National Flag</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem2.jpeg" class="card-img-top" alt="Committee Member 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">VALLABHBHAI PATEL</h5>
+                            <p class="card-text">Advisory Committee on Fundamental Rights</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem3.jpeg" class="card-img-top" alt="Committee Member 3">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">G.V MAVALANKAR</h5>
+                            <p class="card-text">Committee on the Functions of the Constituent Assembly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem6.jpeg" class="card-img-top" alt="Committee Member 4">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ALLADI KRISHNASWAMI AYYAR</h5>
+                            <p class="card-text">Special Committee to Examine the Draft Constitution</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem8.jpeg" class="card-img-top" alt="Committee Member 5">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">B.R AMBEDKAR</h5>
+                            <p class="card-text">Drafting Committee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem9.jpeg" class="card-img-top" alt="Committee Member 6">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A.V THAKKAR</h5>
+                            <p class="card-text">Excluded and partially excluded areas Sub-Committee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem11.jpeg" class="card-img-top" alt="Committee Member 7">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">J.B KRIPALANI</h5>
+                            <p class="card-text">Fundamnetal Rights Sub-Committee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem12.jpeg" class="card-img-top" alt="Committee Member 8">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">B.PATTABHI SITARAMAYYA</h5>
+                            <p class="card-text">House Committee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem13.jpeg" class="card-img-top" alt="Committee Member 9">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">H.C MUKHERJEE</h5>
+                            <p class="card-text">Minorities Sub-Committee </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem14.jpeg" class="card-img-top" alt="Committee Member 10">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">GOPINATH BAROLOI</h5>
+                            <p class="card-text">North-East Frontier tribal areas and Assam, excluded and partially excluded areas Sub-Committee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem15.jpeg" class="card-img-top" alt="Committee Member 11">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">K.M MUNSHI</h5>
+                            <p class="card-text">Order of Business Committee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="member-card-img-wrapper">
+                            <img src="mem19.jpeg" class="card-img-top" alt="Committee Member 12">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">JAWAHARLAL NEHRU</h5>
+                            <p class="card-text">States Committee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Trusted by constitutional law experts, educators, and students nationwide</p>
+            </div>
+    
+            <div class="filter-buttons">
+                <button class="filter-button active">All Reviews</button>
+                <button class="filter-button">Educators</button>
+                <button class="filter-button">Students</button>
+                <button class="filter-button">Legal Professionals</button>
+            </div>
+    
+            <div class="reviews-grid">
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-details">
+                            <h4>Jayan Chamarthy</h4>
+                            <p>Constitutional Law Professor</p>
+                            <p>Georgetown Law School</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p class="review-text">
+                        This platform has revolutionized how I teach constitutional law. The interactive amendments breakdown and case study features have made complex concepts much more accessible to my students.
+                    </p>
+                </div>
+    
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-details">
+                            <h4>Navya Jede</h4>
+                            <p>Law Student</p>
+                            <p>Yale Law School</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p class="review-text">
+                        As a first-year law student, understanding the Constitution's nuances was challenging until I found this resource. The historical context and modern interpretations are excellently explained.
+                    </p>
+                </div>
+    
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="reviewer-details">
+                            <h4> Mokshzna Nivas</h4>
+                            <p>Retired Federal Judge</p>
+                            <p>US District Court</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p class="review-text">
+                        An outstanding resource that presents constitutional principles with remarkable clarity. The platform's attention to historical context and contemporary application is particularly impressive.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        &copy; <span id="year"></span> Civic-clarity. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
